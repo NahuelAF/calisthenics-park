@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#008C2B">
+  <meta name="description" content="Calistenia Apóstoles — Entrená con tu peso corporal. Dominadas, fondos, flexiones y abdominales en las estaciones de tu plaza.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Calistenia Apóstoles">
+  <meta property="og:description" content="Tu progreso empieza en cada repetición.">
+  <meta property="og:image" content="/assets/webp/og-cover.webp">
+  <link rel="canonical" href="https://calistenia-apostoles.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Calistenia Apóstoles — Tu progreso empieza en cada repetición</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" data-route="home">
+    <span class="logo-mark">CA</span>
+    <span class="logo-text">Calistenia Apóstoles</span>
+  </a>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a data-route="home">Inicio</a>
+    <a data-route="dominadas">Dominadas</a>
+    <a data-route="flexiones">Flexiones</a>
+    <a data-route="fondos">Fondos</a>
+    <a data-route="abdominales">Abdominales</a>
+  </div>
+</nav>
+
+<div id="app">
+
+  <!-- ===== HOME ===== -->
+  <div id="view-home">
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span>Apóstoles, Misiones</div>
+        <h1 class="hero-title">
+          <span class="tl">CALISTENIA</span>
+          <span class="tl accent">APÓSTOLES</span>
+        </h1>
+        <p class="hero-sub">Tu progreso empieza en cada repetición.</p>
+        <button class="btn-hero" id="btnComenzar">
+          <span>Comenzar</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </button>
+      </div>
+      <div class="scroll-hint"><div class="scroll-line"></div></div>
+    </section>
+
+    <section class="exercises" id="ejercicios">
+      <div class="section-head">
+        <p class="section-label">ESTACIONES</p>
+        <h2 class="section-title">Elegí tu ejercicio</h2>
+      </div>
+      <div class="cards-grid">
+
+            <article class="exercise-card" data-route="dominadas" tabindex="0">
+          <div class="card-bg cb--dominadas"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-tag">Intermedio</span>
+            <h3 class="card-title">DOMINADAS</h3>
+            <img src="assets/img/pushupbar.webp" alt="Ejercicio Pushup" class="card-image">
+            <p class="card-muscles">Dorsales · Bíceps · Core</p>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="exercise-card" data-route="flexiones" tabindex="0">
+          <div class="card-bg cb--flexiones"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-tag">Principiante</span>
+            <h3 class="card-title">FLEXIONES</h3>
+            <img src="assets/img/pushupbar.webp" alt="Ejercicio Pushup" class="card-image">
+            <p class="card-muscles">Pecho · Tríceps · Hombros</p>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="exercise-card" data-route="fondos" tabindex="0">
+          <div class="card-bg cb--fondos"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-tag">Intermedio</span>
+            <h3 class="card-title">FONDOS</h3>
+            <img src="assets/img/dipsbar.webp" alt="Ejercicio Dips" class="card-image">
+            <p class="card-muscles">Pecho · Tríceps · Deltoides</p>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="exercise-card" data-route="abdominales" tabindex="0">
+          <div class="card-bg cb--abdominales"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-tag">Principiante</span>
+            <h3 class="card-title">ABDOMINALES</h3>
+            <img src="assets/img/abs.webp" alt="Ejercicio abs" class="card-image">
+            <p class="card-muscles">Core · Oblicuos · Lumbar</p>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-logo">CA</p>
+      <p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p>
+      <p class="footer-copy">Ejercitá gratis. Progresá sin límites.</p>
+    </footer>
+  </div>
+
+
+  <!-- ===== DOMINADAS ===== -->
+  <div id="view-dominadas">
+
+    <div class="ex-banner ban--dominadas">
+      <div class="ban-overlay"></div>
+      <div class="ban-content">
+        <span class="ex-tag">ESPALDA · BRAZOS</span>
+        <h1 class="ex-title">DOMINADAS</h1>
+        <p class="ex-quote">"Tu cuerpo sube cuando tu disciplina pesa más que las excusas."</p>
+      </div>
+    </div>
+
+    <div class="ex-body">
+
+      <div class="ex-intro">
+        <p class="ex-desc">Las dominadas son uno de los ejercicios más completos de la calistenia. Desarrollan fuerza en la parte superior del cuerpo usando únicamente el peso corporal, mejorando la espalda, los brazos, el control corporal y la resistencia.</p>
+        <div class="ex-meta-row">
+          <div class="ex-meta-item"><span class="meta-lbl">DIFICULTAD</span><span class="meta-val diff--media">Intermedia</span></div>
+          <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Jalón vertical</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Beneficios</h2>
+        <ul class="benefits-list">
+          <li>Aumentan fuerza de espalda y brazos</li>
+          <li>Mejoran el agarre</li>
+          <li>Desarrollan control corporal</li>
+          <li>Mejoran la postura</li>
+          <li>Progresan hacia ejercicios avanzados</li>
+        </ul>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Músculos trabajados</h2>
+        <div class="muscles-grid">
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Dorsales</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Bíceps</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Trapecios</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Romboides</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Antebrazos</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Core</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Hombros</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Progresiones</h2>
+        <p class="ex-block-sub">De principiante a avanzado</p>
+        <div class="prog-list">
+          <div class="prog-item">
+            <div class="prog-num">01</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dead Hang</h3><span class="tag-beg">Principiante</span></div>
+              <p>Colgarse de la barra manteniendo el control del cuerpo. Fortalece el agarre, hombros y adaptación a la barra.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">02</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Scapular Pull Ups</h3><span class="tag-beg">Principiante</span></div>
+              <p>Movimiento corto donde solo se activan las escápulas sin doblar los brazos. Mejora control escapular y técnica.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">03</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Australian Pull Ups</h3><span class="tag-beg">Principiante</span></div>
+              <p>Dominadas horizontales usando barra baja. Ganan fuerza inicial en espalda y bíceps.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">04</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dominadas Negativas</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Bajar lentamente desde la posición alta. Excelente para ganar fuerza específica y control.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">05</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dominada Completa</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Subir el cuerpo hasta pasar la barbilla por encima de la barra. Movimiento base de la calistenia.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">06</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dominadas Explosivas</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Subida con potencia y velocidad. Preparación para el muscle up y ejercicios dinámicos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Variantes</h2>
+        <div class="variants-grid">
+          <div class="variant-card"><h3>Chin Ups</h3><p>Palmas hacia vos. Mayor activación de bíceps.</p></div>
+          <div class="variant-card"><h3>Wide Grip</h3><p>Agarre amplio. Mayor trabajo de dorsales.</p></div>
+          <div class="variant-card"><h3>Archer Pull Ups</h3><p>Trabajo unilateral. Prep para dominadas a un brazo.</p></div>
+          <div class="variant-card"><h3>Commando Pull Ups</h3><p>Agarre mixto lateral. Mejora coordinación.</p></div>
+          <div class="variant-card vcard--hl"><h3>Muscle Up Prep</h3><p>Transición y explosividad hacia el muscle up.</p></div>
+        </div>
+      </div>
+
+      <div class="ex-nav-bottom">
+        <button class="btn-home-ex" data-route="home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Inicio
+        </button>
+        <button class="btn-next-exercise" data-route="flexiones">
+          Siguiente: <span class="next-label">Flexiones</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
+  </div>
+
+
+  <!-- ===== FLEXIONES ===== -->
+  <div id="view-flexiones">
+
+    <div class="ex-banner ban--flexiones">
+      <div class="ban-overlay"></div>
+      <div class="ban-content">
+        <span class="ex-tag">PECHO · BRAZOS</span>
+        <h1 class="ex-title">FLEXIONES</h1>
+        <p class="ex-quote">"Cada flexión es una conversación entre tu mente y tu cuerpo."</p>
+      </div>
+    </div>
+
+    <div class="ex-body">
+
+      <div class="ex-intro">
+        <p class="ex-desc">Las flexiones son el ejercicio de empuje más fundamental de la calistenia. Desarrollan fuerza en pecho, tríceps y hombros sin necesidad de equipamiento, perfectas para todos los niveles.</p>
+        <div class="ex-meta-row">
+          <div class="ex-meta-item"><span class="meta-lbl">DIFICULTAD</span><span class="meta-val diff--baja">Principiante</span></div>
+          <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Empuje horizontal</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Beneficios</h2>
+        <ul class="benefits-list">
+          <li>Desarrollan pecho, tríceps y hombros</li>
+          <li>Mejoran la fuerza de empuje</li>
+          <li>Fortalecen el core y la estabilidad</li>
+          <li>Accesibles sin equipamiento</li>
+          <li>Múltiples variantes para todo nivel</li>
+        </ul>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Músculos trabajados</h2>
+        <div class="muscles-grid">
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Pectoral</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Tríceps</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Hombros</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Core</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Serrato</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Progresiones</h2>
+        <p class="ex-block-sub">De principiante a avanzado</p>
+        <div class="prog-list">
+          <div class="prog-item">
+            <div class="prog-num">01</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Flexiones en Rodillas</h3><span class="tag-beg">Principiante</span></div>
+              <p>Apoyando las rodillas en el suelo. Reduce la carga y permite desarrollar fuerza inicial.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">02</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Flexiones Inclinadas</h3><span class="tag-beg">Principiante</span></div>
+              <p>Manos en superficie elevada. Menor carga corporal para ganar confianza.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">03</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Flexión Completa</h3><span class="tag-beg">Principiante</span></div>
+              <p>Cuerpo recto, manos a la altura de los hombros, pecho al suelo. El movimiento fundamental.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">04</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Diamond Push Ups</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Manos juntas formando diamante. Mayor énfasis en tríceps y pecho interno.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">05</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Archer Push Ups</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Trabajo unilateral. Un brazo trabaja mientras el otro da soporte. Prep para flexión a un brazo.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">06</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>One Arm Push Up</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Flexión completa a un solo brazo. El nivel máximo de las flexiones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Variantes</h2>
+        <div class="variants-grid">
+          <div class="variant-card"><h3>Wide Push Ups</h3><p>Manos más separadas, mayor trabajo del pecho.</p></div>
+          <div class="variant-card"><h3>Pike Push Ups</h3><p>Caderas elevadas, enfocadas en hombros.</p></div>
+          <div class="variant-card"><h3>Pseudo Planche</h3><p>Dedos hacia atrás, prepara para planche.</p></div>
+          <div class="variant-card vcard--hl"><h3>One Arm Push Up</h3><p>Nivel máximo de las flexiones. Fuerza total.</p></div>
+        </div>
+      </div>
+
+      <div class="ex-nav-bottom">
+        <button class="btn-home-ex" data-route="home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Inicio
+        </button>
+        <button class="btn-next-exercise" data-route="fondos">
+          Siguiente: <span class="next-label">Fondos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
+  </div>
+
+
+  <!-- ===== FONDOS ===== -->
+  <div id="view-fondos">
+
+    <div class="ex-banner ban--fondos">
+      <div class="ban-overlay"></div>
+      <div class="ban-content">
+        <span class="ex-tag">PECHO · TRÍCEPS</span>
+        <h1 class="ex-title">FONDOS</h1>
+        <p class="ex-quote">"La fuerza se construye repetición tras repetición."</p>
+      </div>
+    </div>
+
+    <div class="ex-body">
+
+      <div class="ex-intro">
+        <p class="ex-desc">Los fondos son un ejercicio fundamental para desarrollar fuerza en pecho, tríceps y hombros utilizando barras paralelas. Son clave en la calistenia para construir empuje y progresar hacia movimientos más avanzados.</p>
+        <div class="ex-meta-row">
+          <div class="ex-meta-item"><span class="meta-lbl">DIFICULTAD</span><span class="meta-val diff--media">Intermedia</span></div>
+          <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Empuje vertical</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Beneficios</h2>
+        <ul class="benefits-list">
+          <li>Desarrollan pecho y tríceps</li>
+          <li>Mejoran fuerza de empuje</li>
+          <li>Aumentan estabilidad de hombros</li>
+          <li>Fortalecen el core</li>
+          <li>Progresan hacia ejercicios avanzados</li>
+        </ul>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Músculos trabajados</h2>
+        <div class="muscles-grid">
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Pectoral</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Tríceps</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Deltoides</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Core</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Hombros</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Progresiones</h2>
+        <p class="ex-block-sub">De principiante a avanzado</p>
+        <div class="prog-list">
+          <div class="prog-item">
+            <div class="prog-num">01</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Support Hold</h3><span class="tag-beg">Principiante</span></div>
+              <p>Mantenerse arriba en las paralelas con brazos extendidos. Desarrolla estabilidad y control.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">02</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Bench Dips</h3><span class="tag-beg">Principiante</span></div>
+              <p>Fondos usando banco o superficie baja. Punto de partida para desarrollar fuerza de tríceps.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">03</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Negative Dips</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Bajada lenta y controlada en paralelas. Genera fuerza específica y control excéntrico.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">04</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Assisted Dips</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Fondos con ayuda de banda elástica o apoyo parcial. Completa el movimiento mientras ganas fuerza.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">05</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dips Completos</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Movimiento completo en paralelas con peso corporal. El fondo estándar de la calistenia.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">06</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Explosive Dips</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Fondos rápidos y potentes. Preparación para el muscle up y movimientos dinámicos avanzados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Variantes</h2>
+        <div class="variants-grid">
+          <div class="variant-card"><h3>Straight Bar Dips</h3><p>Fondos en barra recta. Muy usados para muscle up.</p></div>
+          <div class="variant-card"><h3>Korean Dips</h3><p>Variante avanzada detrás de la barra. Gran demanda de hombros.</p></div>
+          <div class="variant-card"><h3>Ring Dips</h3><p>Fondos en anillas. Mayor estabilidad y control.</p></div>
+          <div class="variant-card"><h3>Weighted Dips</h3><p>Con peso añadido. Enfocados en fuerza máxima.</p></div>
+          <div class="variant-card"><h3>Deep Dips</h3><p>Mayor rango de movimiento. Más activación de pecho.</p></div>
+          <div class="variant-card vcard--hl"><h3>Explosive Dips</h3><p>Fondos explosivos para potencia y transición dinámica.</p></div>
+        </div>
+      </div>
+
+      <div class="ex-nav-bottom">
+        <button class="btn-home-ex" data-route="home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Inicio
+        </button>
+        <button class="btn-next-exercise" data-route="abdominales">
+          Siguiente: <span class="next-label">Abdominales</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
+  </div>
+
+
+  <!-- ===== ABDOMINALES ===== -->
+  <div id="view-abdominales">
+
+    <div class="ex-banner ban--abdominales">
+      <div class="ban-overlay"></div>
+      <div class="ban-content">
+        <span class="ex-tag">CORE · ESTABILIDAD</span>
+        <h1 class="ex-title">ABDOMINALES</h1>
+        <p class="ex-quote">"El core fuerte es la base de todo lo demás."</p>
+      </div>
+    </div>
+
+    <div class="ex-body">
+
+      <div class="ex-intro">
+        <p class="ex-desc">Los abdominales y el entrenamiento de core son la base de cualquier progresión en calistenia. Un core fuerte mejora el rendimiento en todos los ejercicios y protege la columna vertebral.</p>
+        <div class="ex-meta-row">
+          <div class="ex-meta-item"><span class="meta-lbl">DIFICULTAD</span><span class="meta-val diff--baja">Principiante</span></div>
+          <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Core · Estabilidad</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Beneficios</h2>
+        <ul class="benefits-list">
+          <li>Fortalecen el core completo</li>
+          <li>Mejoran la postura</li>
+          <li>Protegen la columna vertebral</li>
+          <li>Mejoran el rendimiento general</li>
+          <li>Desarrollan la estabilidad corporal</li>
+        </ul>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Músculos trabajados</h2>
+        <div class="muscles-grid">
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Recto abdominal</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Oblicuos</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Transverso</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Lumbar</span></div>
+          <div class="muscle-card"><div class="m-icon">◈</div><span>Flexores cadera</span></div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Progresiones</h2>
+        <p class="ex-block-sub">De principiante a avanzado</p>
+        <div class="prog-list">
+          <div class="prog-item">
+            <div class="prog-num">01</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Hollow Body Hold</h3><span class="tag-beg">Principiante</span></div>
+              <p>Posición hollow acostado. Base del control de core para toda la calistenia.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">02</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Crunches</h3><span class="tag-beg">Principiante</span></div>
+              <p>Contracción abdominal básica. Activa el recto abdominal con bajo impacto.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">03</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Leg Raises</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Elevación de piernas acostado. Trabaja la parte inferior del abdomen.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">04</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Hanging Knee Raises</h3><span class="tag-mid">Intermedio</span></div>
+              <p>Encogimiento de rodillas colgado de la barra. Máxima activación de core y caderas.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">05</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Toes to Bar</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Colgado de la barra, llevar los pies al nivel de las manos. Nivel máximo de core colgado.</p>
+            </div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-num">06</div>
+            <div class="prog-info">
+              <div class="prog-head"><h3>Dragon Flag</h3><span class="tag-adv">Avanzado</span></div>
+              <p>Control total del cuerpo en posición horizontal. El ejercicio de core más exigente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-block">
+        <h2 class="ex-block-title">Variantes</h2>
+        <div class="variants-grid">
+          <div class="variant-card"><h3>Plank</h3><p>Isométrico. Base del core funcional.</p></div>
+          <div class="variant-card"><h3>L-Sit</h3><p>Core y compresión en paralelas o suelo.</p></div>
+          <div class="variant-card"><h3>Ab Wheel</h3><p>Rueda abdominal. Core anti-extensión total.</p></div>
+          <div class="variant-card vcard--hl"><h3>Dragon Flag</h3><p>Nivel máximo. Control total de core.</p></div>
+        </div>
+      </div>
+
+      <div class="ex-nav-bottom">
+        <button class="btn-home-ex" data-route="home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Inicio
+        </button>
+        <button class="btn-next-exercise" style="display:none;" data-route="">
+          Siguiente: <span class="next-label"></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
+  </div>
+
+</div>
+
+<script src="js/router.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
