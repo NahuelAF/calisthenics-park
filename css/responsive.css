@@ -1,7 +1,7 @@
 /* Tablet+ */
 @media (min-width: 480px) {
   .cards-grid { gap:14px }
-  .exercise-card { aspect-ratio:2/3 }
+  .exercise-card { height:300px }
   .muscles-grid { grid-template-columns:repeat(auto-fill,minmax(100px,1fr)) }
   .variants-grid { grid-template-columns:repeat(3,1fr) }
   .ex-nav-bottom { flex-direction:row }
@@ -30,7 +30,8 @@
   .ex-banner { margin-top:64px; max-height:440px }
   .exercises { padding:88px 36px 72px }
   .cards-grid { grid-template-columns:repeat(4,1fr); gap:16px }
-  .exercise-card { aspect-ratio:3/4 }
+  .exercise-card { height:320px }
+  .card-title { font-size:clamp(32px,3.5vw,52px) }
   .ex-body { padding:0 36px 56px; max-width:720px }
   .ban-content { padding:24px 40px 32px }
   .variants-grid { grid-template-columns:repeat(3,1fr) }
@@ -40,6 +41,8 @@
 @media (min-width: 1024px) {
   .exercises { max-width:1080px }
   .cards-grid { gap:20px }
+  .exercise-card { height:360px }
+  .card-title { font-size:clamp(36px,3vw,56px) }
   .ex-body { max-width:760px }
   .ex-banner { max-height:480px }
 }
