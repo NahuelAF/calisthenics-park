@@ -1,5 +1,5 @@
-const ROUTES = ['home', 'dominadas', 'flexiones', 'fondos', 'abdominales'];
-const EXERCISE_ORDER = ['dominadas', 'flexiones', 'fondos', 'abdominales'];
+const ROUTES = ['home', 'dominadas', 'flexiones', 'fondos', 'abdominales', 'comunidad'];
+const EXERCISE_ORDER = ['dominadas', 'flexiones', 'fondos', 'abdominales', 'comunidad'];
 
 const Router = (() => {
   let current = null;
