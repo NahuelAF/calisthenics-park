@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     menuBtn.setAttribute('aria-expanded', String(open));
   });
 
+  /* Logo navbar → si ya estás en home, sube al top igual */
+  document.querySelector('.nav-logo').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   /* Botón Comenzar → scroll a cards */
   document.getElementById('btnComenzar')?.addEventListener('click', () => {
     document.getElementById('ejercicios')?.scrollIntoView({ behavior:'smooth' });

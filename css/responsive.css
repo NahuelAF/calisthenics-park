@@ -1,18 +1,25 @@
-/* Tablet+ */
+/* ═══════════════════════════════════════════
+   CALISTENIA APÓSTOLES — responsive.css
+   ═══════════════════════════════════════════ */
+
+/* ── Tablet (480px+) ── */
 @media (min-width: 480px) {
-  .cards-grid { gap:14px }
-  .exercise-card { height:300px }
-  .muscles-grid { grid-template-columns:repeat(auto-fill,minmax(100px,1fr)) }
-  .variants-grid { grid-template-columns:repeat(3,1fr) }
-  .ex-nav-bottom { flex-direction:row }
-  .btn-home-ex { flex:0 0 auto }
+  .cards-grid        { gap:14px }
+  .exercise-card     { height:300px }
+  .muscles-grid      { grid-template-columns:repeat(auto-fill,minmax(100px,1fr)) }
+  .variants-grid     { grid-template-columns:repeat(3,1fr) }
+  .ex-nav-bottom     { flex-direction:row }
+  .btn-home-ex       { flex:0 0 auto }
   .btn-next-exercise { flex:1 }
+  .footer-map-wrap   { height:250px }
 }
 
-/* Desktop */
+/* ── Desktop (768px+) ── */
 @media (min-width: 768px) {
-  .navbar { padding:0 36px; height:64px }
-  .nav-menu-btn { display:none }
+  /* Navbar */
+  .navbar        { padding:0 36px; height:64px }
+  .nav-logo-img  { height:40px }
+  .nav-menu-btn  { display:none }
   .nav-links {
     display:flex !important;
     position:static; background:none;
@@ -27,34 +34,63 @@
   .nav-links a.active {
     padding-left:13px; border-left:none; border-bottom-color:var(--accent);
   }
-  .ex-banner { margin-top:64px; max-height:440px }
-  .exercises { padding:88px 36px 72px }
-  .cards-grid { grid-template-columns:repeat(4,1fr); gap:16px }
+
+  /* Banners y body de ejercicios */
+  .ex-banner   { margin-top:64px; max-height:440px }
+  .exercises   { padding:88px 36px 72px }
+  .cards-grid  { grid-template-columns:repeat(4,1fr); gap:16px }
   .exercise-card { height:320px }
-  .card-title { font-size:clamp(32px,3.5vw,52px) }
-  .ex-body { padding:0 36px 56px; max-width:720px }
+  .card-title  { font-size:clamp(32px,3.5vw,52px) }
+  .ex-body     { padding:0 36px 56px; max-width:720px }
   .ban-content { padding:24px 40px 32px }
   .variants-grid { grid-template-columns:repeat(3,1fr) }
-  .muscles-grid { grid-template-columns:repeat(auto-fill,minmax(108px,1fr)) }
+  .muscles-grid  { grid-template-columns:repeat(auto-fill,minmax(108px,1fr)) }
+
+  /* Footer: dos columnas iguales */
+  .footer-inner {
+    grid-template-columns:1fr 1fr;
+  }
+  .footer-left {
+    padding:48px 40px 40px;
+    border-bottom:none;
+    border-right:1px solid var(--border);
+  }
+  .footer-map-col {
+    padding:48px 40px 40px;
+  }
+  .footer-map-wrap   { height:280px }
+  .footer-bottom {
+    flex-direction:row;
+    justify-content:space-between;
+    text-align:left;
+    padding:16px 40px;
+  }
 }
 
+/* ── Wide (1024px+) ── */
 @media (min-width: 1024px) {
-  .exercises { max-width:1080px }
-  .cards-grid { gap:20px }
+  .exercises     { max-width:1080px }
+  .cards-grid    { gap:20px }
   .exercise-card { height:360px }
-  .card-title { font-size:clamp(36px,3vw,56px) }
-  .ex-body { max-width:760px }
-  .ex-banner { max-height:480px }
+  .card-title    { font-size:clamp(36px,3vw,56px) }
+  .ex-body       { max-width:760px }
+  .ex-banner     { max-height:480px }
+  .footer-left   { padding:56px 48px 48px }
+  .footer-map-col{ padding:56px 48px 48px }
+  .footer-map-wrap { height:300px }
 }
 
-/* Reduced motion */
+/* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
-  *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important }
+  *,*::before,*::after {
+    animation-duration:0.01ms !important;
+    transition-duration:0.01ms !important;
+  }
 }
 
-/* Safe area iOS */
+/* ── Safe area iOS ── */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
-  .navbar { padding-top:env(safe-area-inset-top); height:calc(60px + env(safe-area-inset-top)) }
+  .navbar    { padding-top:env(safe-area-inset-top); height:calc(60px + env(safe-area-inset-top)) }
   .ex-banner { margin-top:calc(60px + env(safe-area-inset-top)) }
-  .footer { padding-bottom:calc(44px + env(safe-area-inset-bottom)) }
+  .footer    { padding-bottom:calc(16px + env(safe-area-inset-bottom)) }
 }

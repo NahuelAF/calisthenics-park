@@ -4,13 +4,17 @@ const EXERCISE_ORDER = ['dominadas', 'flexiones', 'fondos', 'abdominales', 'comu
 const Router = (() => {
   let current = null;
 
-  function getRouteFromPath(path) {
-    const slug = path.replace(/^\//, '').split('?')[0].split('#')[0];
-    return ROUTES.includes(slug) ? slug : 'home';
+  /* Lee el hash: #dominadas → "dominadas", sin hash → "home" */
+  function getRouteFromHash() {
+    const hash = window.location.hash.replace('#', '').split('?')[0];
+    return ROUTES.includes(hash) ? hash : 'home';
   }
 
   function showView(route, pushState = true) {
-    if (route === current) return;
+    if (route === current) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
 
     /* Ocultar todas las vistas */
     ROUTES.forEach(r => {
@@ -22,16 +26,15 @@ const Router = (() => {
     if (!next) return;
 
     next.style.display = 'block';
-
-    /* Scroll al top del elemento, no de la ventana */
     next.scrollTop = 0;
     window.scrollTo(0, 0);
 
     current = route;
 
     if (pushState) {
-      const url = route === 'home' ? '/' : '/' + route;
-      history.pushState({ route }, '', url);
+      /* Hash routing: / para home, /#dominadas para el resto */
+      const hash = route === 'home' ? '' : '#' + route;
+      history.pushState({ route }, '', window.location.pathname + hash);
     }
 
     updateNav(route);
@@ -39,22 +42,20 @@ const Router = (() => {
   }
 
   function updateNav(route) {
-    /* Navbar scroll state */
     const navbar = document.getElementById('navbar');
     navbar.classList.toggle('scrolled', route !== 'home');
 
-    /* Links activos */
     document.querySelectorAll('[data-route]').forEach(el => {
       el.classList.toggle('active', el.dataset.route === route);
     });
 
-    /* Botón siguiente ejercicio */
     const idx = EXERCISE_ORDER.indexOf(route);
     document.querySelectorAll('.btn-next-exercise').forEach(btn => {
       if (idx >= 0 && idx < EXERCISE_ORDER.length - 1) {
         const next = EXERCISE_ORDER[idx + 1];
         btn.dataset.route = next;
-        btn.querySelector('.next-label').textContent = next.charAt(0).toUpperCase() + next.slice(1);
+        btn.querySelector('.next-label').textContent =
+          next.charAt(0).toUpperCase() + next.slice(1);
         btn.style.display = 'flex';
       } else {
         btn.style.display = 'none';
@@ -68,6 +69,7 @@ const Router = (() => {
     flexiones:   { title: 'Flexiones — Calistenia Apóstoles' },
     fondos:      { title: 'Fondos — Calistenia Apóstoles' },
     abdominales: { title: 'Abdominales — Calistenia Apóstoles' },
+    comunidad:   { title: 'Comunidad — Calistenia Apóstoles' },
   };
 
   function updateMeta(route) {
@@ -75,21 +77,26 @@ const Router = (() => {
   }
 
   function init() {
-    /* Ocultar todo al inicio */
     ROUTES.forEach(r => {
       const el = document.getElementById('view-' + r);
       if (el) el.style.display = 'none';
     });
 
-    const initial = getRouteFromPath(window.location.pathname);
+    /* Arranca con el hash actual */
+    const initial = getRouteFromHash();
     showView(initial, false);
 
-    window.addEventListener('popstate', e => {
-      const route = (e.state && e.state.route) || getRouteFromPath(window.location.pathname);
-      showView(route, false);
+    /* Navegación con botones atrás/adelante del navegador */
+    window.addEventListener('popstate', () => {
+      showView(getRouteFromHash(), false);
     });
 
-    /* Un solo listener global para todos los data-route */
+    /* También escucha cambios de hash directo (por si acaso) */
+    window.addEventListener('hashchange', () => {
+      showView(getRouteFromHash(), false);
+    });
+
+    /* Listener global para todos los data-route */
     document.addEventListener('click', e => {
       const el = e.target.closest('[data-route]');
       if (!el) return;

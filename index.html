@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#008C2B">
-  <meta name="description" content="Calistenia Apóstoles — Entrená con tu peso corporal. Dominadas, fondos, flexiones y abdominales en las estaciones de tu plaza.">
+  <meta name="description" content="Calistenia Apóstoles — Entrená con tu peso corporal. Dominadas, fondos, flexiones y abdominales en las estaciones de tu plaza. Parque de calistenia público en Apóstoles, Misiones.">
   <meta name="robots" content="index, follow">
+  <meta name="keywords" content="calistenia, apóstoles, misiones, street workout, ejercicio, parque, dominadas, flexiones">
   <meta property="og:title" content="Calistenia Apóstoles">
-  <meta property="og:description" content="Tu progreso empieza en cada repetición.">
+  <meta property="og:description" content="Tu progreso empieza en cada repetición. Parque público de calistenia en Apóstoles, Misiones.">
   <meta property="og:image" content="/assets/webp/og-cover.webp">
-  <link rel="canonical" href="https://calistenia-apostoles.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://calistenia.apostoles.gob.ar/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
@@ -19,13 +21,12 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar" id="navbar">
-  <a class="nav-logo" data-route="home">
-    <span class="logo-mark">CA</span>
-    <span class="logo-text">Calistenia Apóstoles</span>
+  <a class="nav-logo" data-route="home" aria-label="Ir al inicio">
+    <img src="assets/webp/logo1.webp" alt="Calistenia Apóstoles" class="nav-logo-img" width="140" height="40">
   </a>
-  <button class="nav-menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false">
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
@@ -42,7 +43,6 @@
 
   <!-- ===== HOME ===== -->
   <div id="view-home">
-
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="hero-content">
@@ -54,10 +54,10 @@
         <p class="hero-sub">Tu progreso empieza en cada repetición.</p>
         <button class="btn-hero" id="btnComenzar">
           <span>Comenzar</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </button>
       </div>
-      <div class="scroll-hint"><div class="scroll-line"></div></div>
+      <div class="scroll-hint" aria-hidden="true"><div class="scroll-line"></div></div>
     </section>
 
     <section class="exercises" id="ejercicios">
@@ -66,85 +66,96 @@
         <h2 class="section-title">Elegí tu ejercicio</h2>
       </div>
       <div class="cards-grid">
-
-        <article class="exercise-card" data-route="dominadas" tabindex="0">
-          <div class="card-bg cb--dominadas"></div>
-          <div class="card-overlay"></div>
-          <div class="card-glow"></div>
+        <article class="exercise-card" data-route="dominadas" tabindex="0" role="button" aria-label="Ver ejercicio: Dominadas">
+          <div class="card-bg cb--dominadas"></div><div class="card-overlay"></div><div class="card-glow"></div>
           <div class="card-content">
-            <div class="card-top-tag">
-              <span class="card-dot"></span>
-              Intermedio
-            </div>
+            <div class="card-top-tag"><span class="card-dot"></span>Intermedio</div>
             <h3 class="card-title">DOMINADAS</h3>
-            <div class="card-info-row">
-              <p class="card-muscles">Espalda y brazos</p>
-            </div>
+            <div class="card-info-row"><p class="card-muscles">Espalda y brazos</p></div>
           </div>
         </article>
-
-        <article class="exercise-card" data-route="flexiones" tabindex="0">
-          <div class="card-bg cb--flexiones"></div>
-          <div class="card-overlay"></div>
-          <div class="card-glow"></div>
+        <article class="exercise-card" data-route="flexiones" tabindex="0" role="button" aria-label="Ver ejercicio: Flexiones">
+          <div class="card-bg cb--flexiones"></div><div class="card-overlay"></div><div class="card-glow"></div>
           <div class="card-content">
-            <div class="card-top-tag">
-              <span class="card-dot"></span>
-              Principiante
-            </div>
+            <div class="card-top-tag"><span class="card-dot"></span>Principiante</div>
             <h3 class="card-title">FLEXIONES</h3>
-            <div class="card-info-row">
-              <p class="card-muscles">Pecho, hombros y tríceps</p>
-            </div>
+            <div class="card-info-row"><p class="card-muscles">Pecho, hombros y tríceps</p></div>
           </div>
         </article>
-
-        <article class="exercise-card" data-route="fondos" tabindex="0">
-          <div class="card-bg cb--fondos"></div>
-          <div class="card-overlay"></div>
-          <div class="card-glow"></div>
+        <article class="exercise-card" data-route="fondos" tabindex="0" role="button" aria-label="Ver ejercicio: Fondos">
+          <div class="card-bg cb--fondos"></div><div class="card-overlay"></div><div class="card-glow"></div>
           <div class="card-content">
-            <div class="card-top-tag">
-              <span class="card-dot"></span>
-              Intermedio
-            </div>
+            <div class="card-top-tag"><span class="card-dot"></span>Intermedio</div>
             <h3 class="card-title">FONDOS</h3>
-            <div class="card-info-row">
-              <p class="card-muscles">Pecho, hombros y tríceps</p>
-            </div>
+            <div class="card-info-row"><p class="card-muscles">Pecho, hombros y tríceps</p></div>
           </div>
         </article>
-
-        <article class="exercise-card" data-route="abdominales" tabindex="0">
-          <div class="card-bg cb--abdominales"></div>
-          <div class="card-overlay"></div>
-          <div class="card-glow"></div>
+        <article class="exercise-card" data-route="abdominales" tabindex="0" role="button" aria-label="Ver ejercicio: Abdominales">
+          <div class="card-bg cb--abdominales"></div><div class="card-overlay"></div><div class="card-glow"></div>
           <div class="card-content">
-            <div class="card-top-tag">
-              <span class="card-dot"></span>
-              Principiante
-            </div>
+            <div class="card-top-tag"><span class="card-dot"></span>Principiante</div>
             <h3 class="card-title">ABS</h3>
-            <div class="card-info-row">
-              <p class="card-muscles">Core, oblicuos, lumbar</p>
-            </div>
+            <div class="card-info-row"><p class="card-muscles">Core, oblicuos, lumbar</p></div>
           </div>
         </article>
       </div>
     </section>
 
-    <footer class="footer">
-      <p class="footer-logo">CA</p>
-      <p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p>
-      <p class="footer-copy">Ejercitá gratis. Progresá sin límites.</p>
+    <footer class="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-logos">
+            <img src="assets/webp/logo1.webp" alt="Calistenia Apóstoles" class="footer-logo-img" loading="lazy">
+            <div class="footer-logo-divider" aria-hidden="true"></div>
+            <img src="assets/webp/logo2.webp" alt="Logo institucional" class="footer-logo-img footer-logo-img--sm" loading="lazy">
+            <img src="assets/webp/logo3.webp" alt="Logo institucional" class="footer-logo-img footer-logo-img--sm" loading="lazy">
+          </div>
+          <div class="footer-info-block">
+            <div class="footer-info-row">
+              <svg class="footer-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><p class="footer-info-label">UBICACIÓN</p><p class="footer-info-val">Parque Central, Apóstoles</p><p class="footer-info-sub">Misiones, Argentina · CP 3350</p></div>
+            </div>
+          </div>
+          <div class="footer-info-block">
+            <div class="footer-info-row">
+              <svg class="footer-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <div><p class="footer-info-label">INSTAGRAM</p><a class="footer-info-link" href="https://instagram.com/centenario_streetworkout" target="_blank" rel="noopener noreferrer">@centenario_streetworkout</a></div>
+            </div>
+          </div>
+          <div class="footer-info-block">
+            <div class="footer-info-row">
+              <svg class="footer-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div><p class="footer-info-label">HORARIOS</p><p class="footer-info-val">Abierto las 24 horas</p><p class="footer-info-sub">Todos los días · Entrada libre y gratuita</p></div>
+            </div>
+          </div>
+          <div class="footer-info-block">
+            <div class="footer-info-row">
+              <svg class="footer-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.849L.057 23.571a.5.5 0 0 0 .62.608l5.879-1.54A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a10 10 0 0 1-5.197-1.459l-.37-.22-3.834 1.005 1.03-3.739-.242-.385A10 10 0 1 1 12 22z"/></svg>
+              <div><p class="footer-info-label">COMUNIDAD</p><a class="footer-info-link" href="https://chat.whatsapp.com/TU_LINK" target="_blank" rel="noopener noreferrer">Grupo de WhatsApp</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-map-col">
+          <p class="footer-info-label">ENCONTRANOS AQUÍ</p>
+          <div class="footer-map-wrap">
+            <iframe title="Ubicación del Parque de Calistenia Apóstoles" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.437177!2d-55.756492!3d-27.917531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457856c93b0a339%3A0x1c4f2e4f5e5e5e5e!2sParque%20Centenario%2C%20Ap%C3%B3stoles%2C%20Misiones!5e0!3m2!1ses!2sar!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="footer-map-hint">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Parque Central · Apóstoles, Misiones
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="footer-year"></span> Calistenia Apóstoles · Misiones, Argentina. Todos los derechos reservados.</p>
+        <p class="footer-copy footer-copy--sub">Ejercitá gratis. Progresá sin límites.</p>
+      </div>
     </footer>
-    
-  </div>
+  </div><!-- /view-home -->
 
 
   <!-- ===== DOMINADAS ===== -->
   <div id="view-dominadas">
-
     <div class="ex-banner ban--dominadas">
       <div class="ban-overlay"></div>
       <div class="ban-content">
@@ -153,9 +164,7 @@
         <p class="ex-quote">"Tu cuerpo sube cuando tu disciplina pesa más que las excusas."</p>
       </div>
     </div>
-
     <div class="ex-body">
-
       <div class="ex-intro">
         <p class="ex-desc">Las dominadas son uno de los ejercicios más completos de la calistenia. Desarrollan fuerza en la parte superior del cuerpo usando únicamente el peso corporal, mejorando la espalda, los brazos, el control corporal y la resistencia.</p>
         <div class="ex-meta-row">
@@ -163,7 +172,6 @@
           <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Jalón vertical</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Beneficios</h2>
         <ul class="benefits-list">
@@ -174,7 +182,6 @@
           <li>Progresan hacia ejercicios avanzados</li>
         </ul>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Músculos trabajados</h2>
         <div class="muscles-grid">
@@ -187,86 +194,97 @@
           <div class="muscle-card"><div class="m-icon">◈</div><span>Hombros</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Progresiones</h2>
-        <p class="ex-block-sub">De principiante a avanzado</p>
+        <p class="ex-block-sub">De principiante a avanzado &nbsp;·&nbsp; <span class="hint-play">▶ Tocá cada uno para ver la ejecución</span></p>
         <div class="prog-list">
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dead-hang.mp4" data-label="Dead Hang" tabindex="0" role="button" aria-label="Ver video: Dead Hang">
             <div class="prog-num">01</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Dead Hang</h3><span class="tag-beg">Principiante</span></div>
+              <div class="prog-head"><h3>Dead Hang</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Colgarse de la barra manteniendo el control del cuerpo. Fortalece el agarre, hombros y adaptación a la barra.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/scapular-pullups.mp4" data-label="Scapular Pull Ups" tabindex="0" role="button" aria-label="Ver video: Scapular Pull Ups">
             <div class="prog-num">02</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Scapular Pull Ups</h3><span class="tag-beg">Principiante</span></div>
+              <div class="prog-head"><h3>Scapular Pull Ups</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Movimiento corto donde solo se activan las escápulas sin doblar los brazos. Mejora control escapular y técnica.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/australian-pullups.mp4" data-label="Australian Pull Ups" tabindex="0" role="button" aria-label="Ver video: Australian Pull Ups">
             <div class="prog-num">03</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Australian Pull Ups</h3><span class="tag-beg">Principiante</span></div>
+              <div class="prog-head"><h3>Australian Pull Ups</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Dominadas horizontales usando barra baja. Ganan fuerza inicial en espalda y bíceps.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dominadas-negativas.mp4" data-label="Dominadas Negativas" tabindex="0" role="button" aria-label="Ver video: Dominadas Negativas">
             <div class="prog-num">04</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Dominadas Negativas</h3><span class="tag-mid">Intermedio</span></div>
+              <div class="prog-head"><h3>Dominadas Negativas</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Bajar lentamente desde la posición alta. Excelente para ganar fuerza específica y control.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dominada-completa.mp4" data-label="Dominada Completa" tabindex="0" role="button" aria-label="Ver video: Dominada Completa">
             <div class="prog-num">05</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Dominada Completa</h3><span class="tag-mid">Intermedio</span></div>
+              <div class="prog-head"><h3>Dominada Completa</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Subir el cuerpo hasta pasar la barbilla por encima de la barra. Movimiento base de la calistenia.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dominadas-explosivas.mp4" data-label="Dominadas Explosivas" tabindex="0" role="button" aria-label="Ver video: Dominadas Explosivas">
             <div class="prog-num">06</div>
             <div class="prog-info">
-              <div class="prog-head"><h3>Dominadas Explosivas</h3><span class="tag-adv">Avanzado</span></div>
+              <div class="prog-head"><h3>Dominadas Explosivas</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div>
               <p>Subida con potencia y velocidad. Preparación para el muscle up y ejercicios dinámicos.</p>
             </div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Variantes</h2>
+        <p class="ex-block-sub">▶ Tocá cada variante para ver la ejecución</p>
         <div class="variants-grid">
-          <div class="variant-card"><h3>Chin Ups</h3><p>Palmas hacia vos. Mayor activación de bíceps.</p></div>
-          <div class="variant-card"><h3>Wide Grip</h3><p>Agarre amplio. Mayor trabajo de dorsales.</p></div>
-          <div class="variant-card"><h3>Archer Pull Ups</h3><p>Trabajo unilateral. Prep para dominadas a un brazo.</p></div>
-          <div class="variant-card"><h3>Commando Pull Ups</h3><p>Agarre mixto lateral. Mejora coordinación.</p></div>
-          <div class="variant-card vcard--hl"><h3>Muscle Up Prep</h3><p>Transición y explosividad hacia el muscle up.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/chin-ups.mp4" data-label="Chin Ups" tabindex="0" role="button" aria-label="Ver video: Chin Ups">
+            <div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <h3>Chin Ups</h3><p>Palmas hacia vos. Mayor activación de bíceps.</p>
+          </div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/wide-grip.mp4" data-label="Wide Grip" tabindex="0" role="button" aria-label="Ver video: Wide Grip">
+            <div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <h3>Wide Grip</h3><p>Agarre amplio. Mayor trabajo de dorsales.</p>
+          </div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/archer-pullups.mp4" data-label="Archer Pull Ups" tabindex="0" role="button" aria-label="Ver video: Archer Pull Ups">
+            <div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <h3>Archer Pull Ups</h3><p>Trabajo unilateral. Prep para dominadas a un brazo.</p>
+          </div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/commando-pullups.mp4" data-label="Commando Pull Ups" tabindex="0" role="button" aria-label="Ver video: Commando Pull Ups">
+            <div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <h3>Commando Pull Ups</h3><p>Agarre mixto lateral. Mejora coordinación.</p>
+          </div>
+          <div class="variant-card variant-card--video vcard--hl" data-video="assets/videos/muscle-up-prep.mp4" data-label="Muscle Up Prep" tabindex="0" role="button" aria-label="Ver video: Muscle Up Prep">
+            <div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <h3>Muscle Up Prep</h3><p>Transición y explosividad hacia el muscle up.</p>
+          </div>
         </div>
       </div>
-
       <div class="ex-nav-bottom">
-        <button class="btn-home-ex" data-route="home">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Inicio
-        </button>
-        <button class="btn-next-exercise" data-route="flexiones">
-          Siguiente: <span class="next-label">Flexiones</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
+        <button class="btn-home-ex" data-route="home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inicio</button>
+        <button class="btn-next-exercise" data-route="flexiones">Siguiente: <span class="next-label">Flexiones</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
-
-    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
-  </div>
+    <footer class="footer footer--mini" role="contentinfo"><div class="footer-bottom"><p class="footer-copy">© <span class="footer-year-mini"></span> Calistenia Apóstoles · Todos los derechos reservados.</p></div></footer>
+  </div><!-- /view-dominadas -->
 
 
   <!-- ===== FLEXIONES ===== -->
   <div id="view-flexiones">
-
     <div class="ex-banner ban--flexiones">
       <div class="ban-overlay"></div>
       <div class="ban-content">
@@ -275,9 +293,7 @@
         <p class="ex-quote">"Cada flexión es una conversación entre tu mente y tu cuerpo."</p>
       </div>
     </div>
-
     <div class="ex-body">
-
       <div class="ex-intro">
         <p class="ex-desc">Las flexiones son el ejercicio de empuje más fundamental de la calistenia. Desarrollan fuerza en pecho, tríceps y hombros sin necesidad de equipamiento, perfectas para todos los niveles.</p>
         <div class="ex-meta-row">
@@ -285,7 +301,6 @@
           <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Empuje horizontal</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Beneficios</h2>
         <ul class="benefits-list">
@@ -296,7 +311,6 @@
           <li>Múltiples variantes para todo nivel</li>
         </ul>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Músculos trabajados</h2>
         <div class="muscles-grid">
@@ -307,85 +321,63 @@
           <div class="muscle-card"><div class="m-icon">◈</div><span>Serrato</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Progresiones</h2>
-        <p class="ex-block-sub">De principiante a avanzado</p>
+        <p class="ex-block-sub">De principiante a avanzado &nbsp;·&nbsp; <span class="hint-play">▶ Tocá cada uno para ver la ejecución</span></p>
         <div class="prog-list">
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/flexiones-rodillas.mp4" data-label="Flexiones en Rodillas" tabindex="0" role="button" aria-label="Ver video: Flexiones en Rodillas">
             <div class="prog-num">01</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Flexiones en Rodillas</h3><span class="tag-beg">Principiante</span></div>
-              <p>Apoyando las rodillas en el suelo. Reduce la carga y permite desarrollar fuerza inicial.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Flexiones en Rodillas</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Apoyando las rodillas en el suelo. Reduce la carga y permite desarrollar fuerza inicial.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/flexiones-inclinadas.mp4" data-label="Flexiones Inclinadas" tabindex="0" role="button" aria-label="Ver video: Flexiones Inclinadas">
             <div class="prog-num">02</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Flexiones Inclinadas</h3><span class="tag-beg">Principiante</span></div>
-              <p>Manos en superficie elevada. Menor carga corporal para ganar confianza.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Flexiones Inclinadas</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Manos en superficie elevada. Menor carga corporal para ganar confianza.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/flexion-completa.mp4" data-label="Flexión Completa" tabindex="0" role="button" aria-label="Ver video: Flexión Completa">
             <div class="prog-num">03</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Flexión Completa</h3><span class="tag-beg">Principiante</span></div>
-              <p>Cuerpo recto, manos a la altura de los hombros, pecho al suelo. El movimiento fundamental.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Flexión Completa</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Cuerpo recto, manos a la altura de los hombros, pecho al suelo. El movimiento fundamental.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/diamond-pushups.mp4" data-label="Diamond Push Ups" tabindex="0" role="button" aria-label="Ver video: Diamond Push Ups">
             <div class="prog-num">04</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Diamond Push Ups</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Manos juntas formando diamante. Mayor énfasis en tríceps y pecho interno.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Diamond Push Ups</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Manos juntas formando diamante. Mayor énfasis en tríceps y pecho interno.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/archer-pushups.mp4" data-label="Archer Push Ups" tabindex="0" role="button" aria-label="Ver video: Archer Push Ups">
             <div class="prog-num">05</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Archer Push Ups</h3><span class="tag-adv">Avanzado</span></div>
-              <p>Trabajo unilateral. Un brazo trabaja mientras el otro da soporte. Prep para flexión a un brazo.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Archer Push Ups</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Trabajo unilateral. Un brazo trabaja mientras el otro da soporte. Prep para flexión a un brazo.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/one-arm-pushup.mp4" data-label="One Arm Push Up" tabindex="0" role="button" aria-label="Ver video: One Arm Push Up">
             <div class="prog-num">06</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>One Arm Push Up</h3><span class="tag-adv">Avanzado</span></div>
-              <p>Flexión completa a un solo brazo. El nivel máximo de las flexiones.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>One Arm Push Up</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Flexión completa a un solo brazo. El nivel máximo de las flexiones.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Variantes</h2>
+        <p class="ex-block-sub">▶ Tocá cada variante para ver la ejecución</p>
         <div class="variants-grid">
-          <div class="variant-card"><h3>Wide Push Ups</h3><p>Manos más separadas, mayor trabajo del pecho.</p></div>
-          <div class="variant-card"><h3>Pike Push Ups</h3><p>Caderas elevadas, enfocadas en hombros.</p></div>
-          <div class="variant-card"><h3>Pseudo Planche</h3><p>Dedos hacia atrás, prepara para planche.</p></div>
-          <div class="variant-card vcard--hl"><h3>One Arm Push Up</h3><p>Nivel máximo de las flexiones. Fuerza total.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/wide-pushups.mp4" data-label="Wide Push Ups" tabindex="0" role="button" aria-label="Ver video: Wide Push Ups"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Wide Push Ups</h3><p>Agarre abierto. Más pectoral.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/pike-pushups.mp4" data-label="Pike Push Ups" tabindex="0" role="button" aria-label="Ver video: Pike Push Ups"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Pike Push Ups</h3><p>Énfasis en hombros. Prep para handstand.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/decline-pushups.mp4" data-label="Decline Push Ups" tabindex="0" role="button" aria-label="Ver video: Decline Push Ups"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Decline Push Ups</h3><p>Pies elevados. Mayor trabajo de pecho superior.</p></div>
+          <div class="variant-card variant-card--video vcard--hl" data-video="assets/videos/one-arm-pushup.mp4" data-label="One Arm Push Up" tabindex="0" role="button" aria-label="Ver video: One Arm Push Up"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>One Arm Push Up</h3><p>Nivel máximo. Fuerza unilateral total.</p></div>
         </div>
       </div>
-
       <div class="ex-nav-bottom">
-        <button class="btn-home-ex" data-route="home">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Inicio
-        </button>
-        <button class="btn-next-exercise" data-route="fondos">
-          Siguiente: <span class="next-label">Fondos</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
+        <button class="btn-home-ex" data-route="home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inicio</button>
+        <button class="btn-next-exercise" data-route="fondos">Siguiente: <span class="next-label">Fondos</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
-
-    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
-  </div>
+    <footer class="footer footer--mini" role="contentinfo"><div class="footer-bottom"><p class="footer-copy">© <span class="footer-year-mini"></span> Calistenia Apóstoles · Todos los derechos reservados.</p></div></footer>
+  </div><!-- /view-flexiones -->
 
 
   <!-- ===== FONDOS ===== -->
   <div id="view-fondos">
-
     <div class="ex-banner ban--fondos">
       <div class="ban-overlay"></div>
       <div class="ban-content">
@@ -394,9 +386,7 @@
         <p class="ex-quote">"La fuerza se construye repetición tras repetición."</p>
       </div>
     </div>
-
     <div class="ex-body">
-
       <div class="ex-intro">
         <p class="ex-desc">Los fondos son un ejercicio fundamental para desarrollar fuerza en pecho, tríceps y hombros utilizando barras paralelas. Son clave en la calistenia para construir empuje y progresar hacia movimientos más avanzados.</p>
         <div class="ex-meta-row">
@@ -404,7 +394,6 @@
           <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Empuje vertical</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Beneficios</h2>
         <ul class="benefits-list">
@@ -415,7 +404,6 @@
           <li>Progresan hacia ejercicios avanzados</li>
         </ul>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Músculos trabajados</h2>
         <div class="muscles-grid">
@@ -426,86 +414,65 @@
           <div class="muscle-card"><div class="m-icon">◈</div><span>Hombros</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Progresiones</h2>
-        <p class="ex-block-sub">De principiante a avanzado</p>
+        <p class="ex-block-sub">De principiante a avanzado &nbsp;·&nbsp; <span class="hint-play">▶ Tocá cada uno para ver la ejecución</span></p>
         <div class="prog-list">
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/support-hold.mp4" data-label="Support Hold" tabindex="0" role="button" aria-label="Ver video: Support Hold">
             <div class="prog-num">01</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Support Hold</h3><span class="tag-beg">Principiante</span></div>
-              <p>Mantenerse arriba en las paralelas con brazos extendidos. Desarrolla estabilidad y control.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Support Hold</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Mantenerse arriba en las paralelas con brazos extendidos. Desarrolla estabilidad y control.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/bench-dips.mp4" data-label="Bench Dips" tabindex="0" role="button" aria-label="Ver video: Bench Dips">
             <div class="prog-num">02</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Bench Dips</h3><span class="tag-beg">Principiante</span></div>
-              <p>Fondos usando banco o superficie baja. Punto de partida para desarrollar fuerza de tríceps.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Bench Dips</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Fondos usando banco o superficie baja. Punto de partida para desarrollar fuerza de tríceps.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/negative-dips.mp4" data-label="Negative Dips" tabindex="0" role="button" aria-label="Ver video: Negative Dips">
             <div class="prog-num">03</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Negative Dips</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Bajada lenta y controlada en paralelas. Genera fuerza específica y control excéntrico.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Negative Dips</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Bajada lenta y controlada en paralelas. Genera fuerza específica y control excéntrico.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/assisted-dips.mp4" data-label="Assisted Dips" tabindex="0" role="button" aria-label="Ver video: Assisted Dips">
             <div class="prog-num">04</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Assisted Dips</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Fondos con ayuda de banda elástica o apoyo parcial. Completa el movimiento mientras ganas fuerza.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Assisted Dips</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Fondos con ayuda de banda elástica o apoyo parcial. Completa el movimiento mientras ganas fuerza.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dips-completos.mp4" data-label="Dips Completos" tabindex="0" role="button" aria-label="Ver video: Dips Completos">
             <div class="prog-num">05</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Dips Completos</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Movimiento completo en paralelas con peso corporal. El fondo estándar de la calistenia.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Dips Completos</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Movimiento completo en paralelas con peso corporal. El fondo estándar de la calistenia.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/explosive-dips.mp4" data-label="Explosive Dips" tabindex="0" role="button" aria-label="Ver video: Explosive Dips">
             <div class="prog-num">06</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Explosive Dips</h3><span class="tag-adv">Avanzado</span></div>
-              <p>Fondos rápidos y potentes. Preparación para el muscle up y movimientos dinámicos avanzados.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Explosive Dips</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Fondos rápidos y potentes. Preparación para el muscle up y movimientos dinámicos avanzados.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Variantes</h2>
+        <p class="ex-block-sub">▶ Tocá cada variante para ver la ejecución</p>
         <div class="variants-grid">
-          <div class="variant-card"><h3>Straight Bar Dips</h3><p>Fondos en barra recta. Muy usados para muscle up.</p></div>
-          <div class="variant-card"><h3>Korean Dips</h3><p>Variante avanzada detrás de la barra. Gran demanda de hombros.</p></div>
-          <div class="variant-card"><h3>Ring Dips</h3><p>Fondos en anillas. Mayor estabilidad y control.</p></div>
-          <div class="variant-card"><h3>Weighted Dips</h3><p>Con peso añadido. Enfocados en fuerza máxima.</p></div>
-          <div class="variant-card"><h3>Deep Dips</h3><p>Mayor rango de movimiento. Más activación de pecho.</p></div>
-          <div class="variant-card vcard--hl"><h3>Explosive Dips</h3><p>Fondos explosivos para potencia y transición dinámica.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/straight-bar-dips.mp4" data-label="Straight Bar Dips" tabindex="0" role="button" aria-label="Ver video: Straight Bar Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Straight Bar Dips</h3><p>Fondos en barra recta. Muy usados para muscle up.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/korean-dips.mp4" data-label="Korean Dips" tabindex="0" role="button" aria-label="Ver video: Korean Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Korean Dips</h3><p>Variante avanzada detrás de la barra. Gran demanda de hombros.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/ring-dips.mp4" data-label="Ring Dips" tabindex="0" role="button" aria-label="Ver video: Ring Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Ring Dips</h3><p>Fondos en anillas. Mayor estabilidad y control.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/weighted-dips.mp4" data-label="Weighted Dips" tabindex="0" role="button" aria-label="Ver video: Weighted Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Weighted Dips</h3><p>Con peso añadido. Enfocados en fuerza máxima.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/deep-dips.mp4" data-label="Deep Dips" tabindex="0" role="button" aria-label="Ver video: Deep Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Deep Dips</h3><p>Mayor rango de movimiento. Más activación de pecho.</p></div>
+          <div class="variant-card variant-card--video vcard--hl" data-video="assets/videos/explosive-dips.mp4" data-label="Explosive Dips" tabindex="0" role="button" aria-label="Ver video: Explosive Dips"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Explosive Dips</h3><p>Fondos explosivos para potencia y transición dinámica.</p></div>
         </div>
       </div>
-
       <div class="ex-nav-bottom">
-        <button class="btn-home-ex" data-route="home">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Inicio
-        </button>
-        <button class="btn-next-exercise" data-route="abdominales">
-          Siguiente: <span class="next-label">Abdominales</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
+        <button class="btn-home-ex" data-route="home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inicio</button>
+        <button class="btn-next-exercise" data-route="abdominales">Siguiente: <span class="next-label">Abdominales</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
+    <footer class="footer footer--mini" role="contentinfo"><div class="footer-bottom"><p class="footer-copy">© <span class="footer-year-mini"></span> Calistenia Apóstoles · Todos los derechos reservados.</p></div></footer>
+  </div><!-- /view-fondos -->
 
-    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
-  </div>
 
   <!-- ===== ABDOMINALES ===== -->
   <div id="view-abdominales">
-
     <div class="ex-banner ban--abdominales">
       <div class="ban-overlay"></div>
       <div class="ban-content">
@@ -514,9 +481,7 @@
         <p class="ex-quote">"El core fuerte es la base de todo lo demás."</p>
       </div>
     </div>
-
     <div class="ex-body">
-
       <div class="ex-intro">
         <p class="ex-desc">Los abdominales y el entrenamiento de core son la base de cualquier progresión en calistenia. Un core fuerte mejora el rendimiento en todos los ejercicios y protege la columna vertebral.</p>
         <div class="ex-meta-row">
@@ -524,7 +489,6 @@
           <div class="ex-meta-item"><span class="meta-lbl">TIPO</span><span class="meta-val">Core · Estabilidad</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Beneficios</h2>
         <ul class="benefits-list">
@@ -535,7 +499,6 @@
           <li>Desarrollan la estabilidad corporal</li>
         </ul>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Músculos trabajados</h2>
         <div class="muscles-grid">
@@ -546,193 +509,189 @@
           <div class="muscle-card"><div class="m-icon">◈</div><span>Flexores cadera</span></div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Progresiones</h2>
-        <p class="ex-block-sub">De principiante a avanzado</p>
+        <p class="ex-block-sub">De principiante a avanzado &nbsp;·&nbsp; <span class="hint-play">▶ Tocá cada uno para ver la ejecución</span></p>
         <div class="prog-list">
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/hollow-body.mp4" data-label="Hollow Body Hold" tabindex="0" role="button" aria-label="Ver video: Hollow Body Hold">
             <div class="prog-num">01</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Hollow Body Hold</h3><span class="tag-beg">Principiante</span></div>
-              <p>Posición hollow acostado. Base del control de core para toda la calistenia.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Hollow Body Hold</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Posición hollow acostado. Base del control de core para toda la calistenia.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/crunches.mp4" data-label="Crunches" tabindex="0" role="button" aria-label="Ver video: Crunches">
             <div class="prog-num">02</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Crunches</h3><span class="tag-beg">Principiante</span></div>
-              <p>Contracción abdominal básica. Activa el recto abdominal con bajo impacto.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Crunches</h3><span class="tag-beg">Principiante</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Contracción abdominal básica. Activa el recto abdominal con bajo impacto.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/leg-raises.mp4" data-label="Leg Raises" tabindex="0" role="button" aria-label="Ver video: Leg Raises">
             <div class="prog-num">03</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Leg Raises</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Elevación de piernas acostado. Trabaja la parte inferior del abdomen.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Leg Raises</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Elevación de piernas acostado. Trabaja la parte inferior del abdomen.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/hanging-knee-raises.mp4" data-label="Hanging Knee Raises" tabindex="0" role="button" aria-label="Ver video: Hanging Knee Raises">
             <div class="prog-num">04</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Hanging Knee Raises</h3><span class="tag-mid">Intermedio</span></div>
-              <p>Encogimiento de rodillas colgado de la barra. Máxima activación de core y caderas.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Hanging Knee Raises</h3><span class="tag-mid">Intermedio</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Encogimiento de rodillas colgado de la barra. Máxima activación de core y caderas.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/toes-to-bar.mp4" data-label="Toes to Bar" tabindex="0" role="button" aria-label="Ver video: Toes to Bar">
             <div class="prog-num">05</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Toes to Bar</h3><span class="tag-adv">Avanzado</span></div>
-              <p>Colgado de la barra, llevar los pies al nivel de las manos. Nivel máximo de core colgado.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Toes to Bar</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Colgado de la barra, llevar los pies al nivel de las manos. Nivel máximo de core colgado.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
-          <div class="prog-item">
+          <div class="prog-item prog-item--video" data-video="assets/videos/dragon-flag.mp4" data-label="Dragon Flag" tabindex="0" role="button" aria-label="Ver video: Dragon Flag">
             <div class="prog-num">06</div>
-            <div class="prog-info">
-              <div class="prog-head"><h3>Dragon Flag</h3><span class="tag-adv">Avanzado</span></div>
-              <p>Control total del cuerpo en posición horizontal. El ejercicio de core más exigente.</p>
-            </div>
+            <div class="prog-info"><div class="prog-head"><h3>Dragon Flag</h3><span class="tag-adv">Avanzado</span><span class="prog-play-hint"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>Ver ejecución</span></div><p>Control total del cuerpo en posición horizontal. El ejercicio de core más exigente.</p></div>
+            <div class="prog-play-btn" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div>
           </div>
         </div>
       </div>
-
       <div class="ex-block">
         <h2 class="ex-block-title">Variantes</h2>
+        <p class="ex-block-sub">▶ Tocá cada variante para ver la ejecución</p>
         <div class="variants-grid">
-          <div class="variant-card"><h3>Plank</h3><p>Isométrico. Base del core funcional.</p></div>
-          <div class="variant-card"><h3>L-Sit</h3><p>Core y compresión en paralelas o suelo.</p></div>
-          <div class="variant-card"><h3>Ab Wheel</h3><p>Rueda abdominal. Core anti-extensión total.</p></div>
-          <div class="variant-card vcard--hl"><h3>Dragon Flag</h3><p>Nivel máximo. Control total de core.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/plank.mp4" data-label="Plank" tabindex="0" role="button" aria-label="Ver video: Plank"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Plank</h3><p>Isométrico. Base del core funcional.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/l-sit.mp4" data-label="L-Sit" tabindex="0" role="button" aria-label="Ver video: L-Sit"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>L-Sit</h3><p>Core y compresión en paralelas o suelo.</p></div>
+          <div class="variant-card variant-card--video" data-video="assets/videos/ab-wheel.mp4" data-label="Ab Wheel" tabindex="0" role="button" aria-label="Ver video: Ab Wheel"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Ab Wheel</h3><p>Rueda abdominal. Core anti-extensión total.</p></div>
+          <div class="variant-card variant-card--video vcard--hl" data-video="assets/videos/dragon-flag.mp4" data-label="Dragon Flag" tabindex="0" role="button" aria-label="Ver video: Dragon Flag"><div class="variant-play-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg></div><h3>Dragon Flag</h3><p>Nivel máximo. Control total de core.</p></div>
         </div>
       </div>
-
       <div class="ex-nav-bottom">
-        <button class="btn-home-ex" data-route="home">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Inicio
-        </button>
-        <button class="btn-next-exercise" style="display:none;" data-route="">
-          Siguiente: <span class="next-label"></span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
+        <button class="btn-home-ex" data-route="home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inicio</button>
+        <button class="btn-next-exercise" style="display:none;" data-route=""><span class="next-label"></span></button>
       </div>
     </div>
+    <footer class="footer footer--mini" role="contentinfo"><div class="footer-bottom"><p class="footer-copy">© <span class="footer-year-mini"></span> Calistenia Apóstoles · Todos los derechos reservados.</p></div></footer>
+  </div><!-- /view-abdominales -->
 
-    <footer class="footer"><p class="footer-logo">CA</p><p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p></footer>
-  </div>
 
+  <!-- ===== COMUNIDAD ===== -->
   <div id="view-comunidad">
-
-  <div class="ex-banner ban--comunidad">
-    <div class="ban-overlay"></div>
-
-    <div class="ban-content">
-      <span class="ex-tag">COMUNIDAD · CALISTENIA</span>
-
-      <h1 class="ex-title">COMUNIDAD</h1>
-
-      <p class="ex-quote">
-        "Entrenar juntos nos hace más fuertes."
-      </p>
-    </div>
-  </div>
-
-  <div class="ex-body">
-
-    <div class="ex-intro">
-      <p class="ex-desc">
-        Sumate a una comunidad donde cada entrenamiento es una oportunidad para superarte.
-        Compartimos motivación, disciplina y la mentalidad de progresar juntos día a día.
-      </p>
-
-      <div class="ex-meta-row">
-        <div class="ex-meta-item">
-          <span class="meta-lbl">UBICACIÓN</span>
-          <span class="meta-val">Apóstoles, Misiones</span>
-        </div>
-
-        <div class="ex-meta-item">
-          <span class="meta-lbl">NIVEL</span>
-          <span class="meta-val diff--baja">Todos</span>
-        </div>
+    <div class="ex-banner ban--comunidad">
+      <div class="ban-overlay"></div>
+      <div class="ban-content">
+        <span class="ex-tag">COMUNIDAD · CALISTENIA</span>
+        <h1 class="ex-title">COMUNIDAD</h1>
+        <p class="ex-quote">"Entrenar juntos nos hace más fuertes."</p>
       </div>
     </div>
-
-    <div class="ex-block">
-      <h2 class="ex-block-title">¿Qué hacemos?</h2>
-
-      <ul class="benefits-list">
-        <li>Entrenamientos grupales</li>
-        <li>Ayuda para principiantes</li>
-        <li>Rutinas y progresiones</li>
-        <li>Competencias y eventos</li>
-        <li>Comunidad fitness local</li>
-      </ul>
-    </div>
-
-    <div class="ex-block">
-      <h2 class="ex-block-title">Unite a la comunidad</h2>
-
-      <div class="contact-links">
-
-        <a class="contact-btn contact-btn--ig"
-           href="https://instagram.com/centenario_streetworkout"
-           target="_blank"
-           rel="noopener">
-
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-
-          Seguinos en Instagram
-        </a>
-
-        <a class="contact-btn contact-btn--wpp"
-           href="https://chat.whatsapp.com/TU_LINK"
-           target="_blank"
-           rel="noopener">
-
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-          </svg>
-
-          Grupo de WhatsApp
-        </a>
-
+    <div class="ex-body">
+      <div class="ex-intro">
+        <p class="ex-desc">Sumate a una comunidad donde cada entrenamiento es una oportunidad para superarte. Compartimos motivación, disciplina y la mentalidad de progresar juntos día a día.</p>
+        <div class="ex-meta-row">
+          <div class="ex-meta-item"><span class="meta-lbl">UBICACIÓN</span><span class="meta-val">Apóstoles, Misiones</span></div>
+          <div class="ex-meta-item"><span class="meta-lbl">NIVEL</span><span class="meta-val diff--baja">Todos</span></div>
+        </div>
+      </div>
+      <div class="ex-block">
+        <h2 class="ex-block-title">¿Qué hacemos?</h2>
+        <ul class="benefits-list">
+          <li>Entrenamientos grupales</li>
+          <li>Ayuda para principiantes</li>
+          <li>Rutinas y progresiones</li>
+          <li>Competencias y eventos</li>
+          <li>Comunidad fitness local</li>
+        </ul>
+      </div>
+      <div class="ex-block">
+        <h2 class="ex-block-title">Unite a la comunidad</h2>
+        <div class="contact-links">
+          <a class="contact-btn contact-btn--ig" href="https://instagram.com/centenario_streetworkout" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Seguinos en Instagram
+          </a>
+          <a class="contact-btn contact-btn--wpp" href="https://chat.whatsapp.com/TU_LINK" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.849L.057 23.571a.5.5 0 0 0 .62.608l5.879-1.54A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a10 10 0 0 1-5.197-1.459l-.37-.22-3.834 1.005 1.03-3.739-.242-.385A10 10 0 1 1 12 22z"/></svg>Grupo de WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="ex-nav-bottom">
+        <button class="btn-home-ex" data-route="home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inicio</button>
       </div>
     </div>
+    <footer class="footer footer--mini" role="contentinfo"><div class="footer-bottom"><p class="footer-copy">© <span class="footer-year-mini"></span> Calistenia Apóstoles · Todos los derechos reservados.</p></div></footer>
+  </div><!-- /view-comunidad -->
 
-    <div class="ex-nav-bottom">
-      <button class="btn-home-ex" data-route="home">
+</div><!-- /app -->
 
-        <svg width="16" height="16" viewBox="0 0 24 24"
-             fill="none"
-             stroke="currentColor"
-             stroke-width="2.5">
-
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-
-        Inicio
+<!-- ===== MODAL DE VIDEO (único, global) ===== -->
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+  <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+  <div class="video-modal-box">
+    <div class="video-modal-header">
+      <p class="video-modal-label">EJECUCIÓN</p>
+      <h3 class="video-modal-title" id="videoModalTitle">—</h3>
+      <button class="video-modal-close" id="videoModalClose" aria-label="Cerrar video">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
-
+    <div class="video-modal-media">
+      <video id="videoModalPlayer" autoplay loop muted playsinline preload="none">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+    <p class="video-modal-tip">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Video en bucle · Sin audio · Tocá fuera para cerrar
+    </p>
   </div>
-
-  <footer class="footer">
-    <p class="footer-logo">CA</p>
-    <p class="footer-tag">Calistenia Apóstoles · Misiones, Argentina</p>
-  </footer>
-
-</div>
-
 </div>
 
 <script src="js/router.js" defer></script>
 <script src="js/main.js" defer></script>
+<script>
+  /* Año dinámico */
+  const yr = new Date().getFullYear();
+  document.getElementById('footer-year').textContent = yr;
+  document.querySelectorAll('.footer-year-mini').forEach(el => el.textContent = yr);
+
+  /* ── MODAL DE VIDEO ── */
+  const modal       = document.getElementById('videoModal');
+  const modalTitle  = document.getElementById('videoModalTitle');
+  const modalPlayer = document.getElementById('videoModalPlayer');
+  const modalClose  = document.getElementById('videoModalClose');
+  const modalBg     = document.getElementById('videoModalBackdrop');
+
+  function openVideoModal(src, label) {
+    modalTitle.textContent = label;
+    modalPlayer.src = src;
+    modalPlayer.load();
+    modalPlayer.play().catch(() => {});
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    /* Pequeño delay para que la animación de cierre termine antes de pausar */
+    setTimeout(() => {
+      modalPlayer.pause();
+      modalPlayer.src = '';
+    }, 300);
+  }
+
+  /* Abrir al hacer click en cualquier item con data-video */
+  document.addEventListener('click', e => {
+    const el = e.target.closest('[data-video]');
+    if (!el) return;
+    /* Evitar que también dispare el router */
+    e.stopPropagation();
+    openVideoModal(el.dataset.video, el.dataset.label || 'Ejercicio');
+  });
+
+  /* Teclado: Enter / Space en items clickeables */
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      closeVideoModal();
+      return;
+    }
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.dataset.video) {
+      e.preventDefault();
+      openVideoModal(e.target.dataset.video, e.target.dataset.label || 'Ejercicio');
+    }
+  });
+
+  modalClose.addEventListener('click', closeVideoModal);
+  modalBg.addEventListener('click', closeVideoModal);
+</script>
 </body>
 </html>
